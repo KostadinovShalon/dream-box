@@ -69,7 +69,7 @@ Deep neural networks have demonstrated great generalization capabilities for tas
 
 ## Citation
     {% raw %}
-    @article{isaac-medina24fever-ood, 
+    @article{isaac-medina24dream-box, 
     author = {Isaac-Medina, Brian K.S. and Breckon, Toby P.}, 
     title = {Dream-Box: Object-wise Outlier Generation for Out-of-Distribution Detection}, 
     journal={CVPRW}, 
