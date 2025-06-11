@@ -5,8 +5,7 @@ layout: default
 
 ## Abstract
 
-Modern machine learning models, that excel on computer vision tasks such as classification and object detection, are often overconfident in their predictions for Out-of-Distribution (OOD) examples, resulting in unpredictable behaviour for open-set environments. Recent works have demonstrated that the free energy score is an effective measure of uncertainty for OOD detection given its close relationship to the data distribution. However, despite free energy-based methods representing a significant empirical advance in OOD detection, our theoretical analysis reveals previously unexplored and inherent vulnerabilities within the free energy score formulation such that in-distribution and OOD instances can have distinct feature representations yet identical free energy scores. This phenomenon occurs when the vector direction representing the feature space difference between the in-distribution and OOD sample lies within the null space of the last layer of a neural-based classifier. To mitigate these issues, we explore lower-dimensional feature spaces to reduce the null space footprint and introduce novel regularisation to maximize the least singular value of the final linear layer, hence enhancing inter-sample free energy separation. We refer to these techniques as Free Energy Vulnerability Elimination for Robust Out-of-Distribution Detection (FEVER-OOD). Our experiments show that FEVER-OOD techniques achieve state of the art OOD detection in Imagenet-100, with average OOD false positive rate (at 95% true positive rate) of 35.83% when used with the baseline Dream-OOD model.
-
+Deep neural networks have demonstrated great generalization capabilities for tasks whose training and test sets are drawn from the same distribution. Nevertheless, out-of-distribution (OOD) detection remains a challenging task that has received significant attention in recent years. Specifically, OOD detection refers to the detection of instances that do not belong to the training distribution, while still having good performance on the in-distribution task (e.g., classification or object detection). Recent work has focused on generating synthetic outliers and using them to train an outlier detector, generally achieving improved OOD detection than traditional OOD methods. In this regard, outliers can be generated either in feature or pixel space. Feature space driven methods have shown strong performance on both the classification and object detection tasks, at the expense that the visualization of training outliers remains unknown, making further analysis on OOD failure modes challenging. On the other hand, pixel space outlier generation techniques enabled by diffusion models have been used for image classification using, providing improved OOD detection performance and outlier visualization, although their adaption to the object detection task is as yet unexplored. We therefore introduce Dream-Box, a method that provides a link to object-wise outlier generation in the pixel space for OOD detection. Specifically, we use diffusion models to generate object-wise outliers that are used to train an object detector for an in-distribution task and OOD detection. Our method achieves comparable performance to previous traditional methods while being the first technique to provide concrete visualization of generated OOD objects.
 [//]: # (<a href="images/small_architecture.png" target="_blank"><img src="images/small_architecture.png"/></a>)
 
 ## Results
@@ -70,9 +69,9 @@ Modern machine learning models, that excel on computer vision tasks such as clas
 ## Citation
     {% raw %}
     @article{isaac-medina24fever-ood, 
-    author = {Isaac-Medina, B.K.S. and Che, M. and Gaus, Y.F.A. and Akcay, S. and Breckon, T.P.}, 
-    title = {FEVER-OOD: Free Energy Vulnerability Elimination for Robust Out-of-Distribution Detection}, 
-    journal={arXiv preprint arXiv:2412.01596}, 
-    year = {2024}, 
-    month = {December}, }
+    author = {Isaac-Medina, Brian K.S. and Breckon, Toby P.}, 
+    title = {Dream-Box: Object-wise Outlier Generation for Out-of-Distribution Detection}, 
+    journal={CVPRW}, 
+    year = {2025}, 
+    month = {June}, }
     {% endraw %}
