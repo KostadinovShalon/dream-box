@@ -9,62 +9,111 @@ Deep neural networks have demonstrated great generalization capabilities for tas
 
 [//]: # (<a href="images/small_architecture.png" target="_blank"><img src="images/small_architecture.png"/></a>)
 
-## Results
+[//]: # (## Results)
 
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <div class="card">
-        <a href="images/mscoco_vos.jpg" target="_blank"><img class='card-img' src="images/mscoco_vos.jpg"/></a>
-        <div class="card-container">
-            <h4>ID:PASCAL VOC, OOD:MSCOCO</h4>
-        </div>
-    </div>
-  </div>
+[//]: # ()
+[//]: # (<div class="slideshow-container">)
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <div class="card">
-        <a href="images/mscoco_ffs.jpg" target="_blank"><img class='card-img' src="images/mscoco_ffs.jpg"/></a>
-        <div class="card-container">
-            <h4>ID:PASCAL VOC, OOD:MSCOCO</h4>
-        </div>
-    </div>
-  </div>
+[//]: # (  <div class="mySlides fade">)
 
-<div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <div class="card">
-        <a href="images/openimages_vos.jpg" target="_blank"><img class='card-img' src="images/openimages_vos.jpg"/></a>
-        <div class="card-container">
-            <h4>ID:PASCAL VOC, OOD:OpenImages</h4>
-        </div>
-    </div>
-  </div>
+[//]: # (    <div class="numbertext">1 / 4</div>)
 
-<div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <div class="card">
-        <a href="images/openimages_ffs.jpg" target="_blank"><img class='card-img' src="images/openimages_ffs.jpg"/></a>
-        <div class="card-container">
-            <h4>ID:PASCAL VOC, OOD:OpenImages</h4>
-        </div>
-    </div>
-  </div>
+[//]: # (    <div class="card">)
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+[//]: # (        <a href="images/mscoco_vos.jpg" target="_blank"><img class='card-img' src="images/mscoco_vos.jpg"/></a>)
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
+[//]: # (        <div class="card-container">)
+
+[//]: # (            <h4>ID:PASCAL VOC, OOD:MSCOCO</h4>)
+
+[//]: # (        </div>)
+
+[//]: # (    </div>)
+
+[//]: # (  </div>)
+
+[//]: # ()
+[//]: # (  <div class="mySlides fade">)
+
+[//]: # (    <div class="numbertext">2 / 4</div>)
+
+[//]: # (    <div class="card">)
+
+[//]: # (        <a href="images/mscoco_ffs.jpg" target="_blank"><img class='card-img' src="images/mscoco_ffs.jpg"/></a>)
+
+[//]: # (        <div class="card-container">)
+
+[//]: # (            <h4>ID:PASCAL VOC, OOD:MSCOCO</h4>)
+
+[//]: # (        </div>)
+
+[//]: # (    </div>)
+
+[//]: # (  </div>)
+
+[//]: # ()
+[//]: # (<div class="mySlides fade">)
+
+[//]: # (    <div class="numbertext">3 / 4</div>)
+
+[//]: # (    <div class="card">)
+
+[//]: # (        <a href="images/openimages_vos.jpg" target="_blank"><img class='card-img' src="images/openimages_vos.jpg"/></a>)
+
+[//]: # (        <div class="card-container">)
+
+[//]: # (            <h4>ID:PASCAL VOC, OOD:OpenImages</h4>)
+
+[//]: # (        </div>)
+
+[//]: # (    </div>)
+
+[//]: # (  </div>)
+
+[//]: # ()
+[//]: # (<div class="mySlides fade">)
+
+[//]: # (    <div class="numbertext">4 / 4</div>)
+
+[//]: # (    <div class="card">)
+
+[//]: # (        <a href="images/openimages_ffs.jpg" target="_blank"><img class='card-img' src="images/openimages_ffs.jpg"/></a>)
+
+[//]: # (        <div class="card-container">)
+
+[//]: # (            <h4>ID:PASCAL VOC, OOD:OpenImages</h4>)
+
+[//]: # (        </div>)
+
+[//]: # (    </div>)
+
+[//]: # (  </div>)
+
+[//]: # ()
+[//]: # (  <!-- Next and previous buttons -->)
+
+[//]: # (  <a class="prev" onclick="plusSlides&#40;-1&#41;">&#10094;</a>)
+
+[//]: # (  <a class="next" onclick="plusSlides&#40;1&#41;">&#10095;</a>)
+
+[//]: # (</div>)
+
+[//]: # (<br>)
+
+[//]: # ()
+[//]: # (<!-- The dots/circles -->)
+
+[//]: # (<div style="text-align:center">)
+
+[//]: # (  <span class="dot" onclick="currentSlide&#40;1&#41;"></span>)
+
+[//]: # (  <span class="dot" onclick="currentSlide&#40;2&#41;"></span>)
+
+[//]: # (  <span class="dot" onclick="currentSlide&#40;3&#41;"></span>)
+
+[//]: # (  <span class="dot" onclick="currentSlide&#40;4&#41;"></span>)
+
+[//]: # (</div>)
 
 
 ## Citation
