@@ -9,6 +9,7 @@ import torch
 from pycocotools.coco import COCO
 import os
 from PIL import Image
+from diffusers import AutoPipelineForInpainting
 
 parser = argparse.ArgumentParser(description='Modified Prompts Embedding Dream-Box generator')
 parser.add_argument('--images_dir', type=str, default='data/voc/JPEGImages', help='path to VOC dataset')
@@ -27,7 +28,6 @@ std = args.std
 os.makedirs(args.output_dir, exist_ok=True)
 os.makedirs(os.path.join(args.output_dir, 'images'), exist_ok=True)
 
-from diffusers import AutoPipelineForInpainting
 pipeline = AutoPipelineForInpainting.from_pretrained("stabilityai/stable-diffusion-2-inpainting",
                                                      torch_dtype=torch.float16, variant="fp16").to("cuda")
 
