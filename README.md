@@ -52,7 +52,7 @@ Both scripts will generate images in `<OUTPUT_DIR>/images` directory and an anno
 
 ## OOD Training
 
-TBA
+We use MMDetection 3.x for training an OOD detector based on the free energy score, similar as in [Dream-OOD](https://arxiv.org/abs/2309.13415). To train this object-wise OOD detector, download and install MMDetection 3.x and copy the **DreamBox** folder into the `mmdetection/projects` directory of MMDetection 3.x. We provide different [config files][./DreamBox/configs] for both generic prompt and modified embedding generated images, with different standard deviation for the modified embedding method and different number of used images for training. Please check the config files and adjust accordingly. In-distribution detection performance is evaluated as usual. After training, generate the results files using the testing script of MMDetection. For more details, please [check the MMDetection documentation](https://mmdetection.readthedocs.io/en/latest/).
 
 ## OOD Evaluation
 
